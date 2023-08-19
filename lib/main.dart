@@ -5,10 +5,10 @@ import 'package:talk_app/const/colors.dart';
 import 'package:talk_app/const/fonts.dart';
 import 'package:talk_app/views/auth_screens/splash_screen.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
